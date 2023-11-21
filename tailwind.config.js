@@ -14,6 +14,7 @@ module.exports = {
       "slate-grey": "#27293F",
       white: "#ffffff",
       "dark-navy": "#242742",
+      "border-gray" "##9294a0"
     },
     fontFamily: {
       sans: ['"Roboto"'],

@@ -24,24 +24,43 @@
     />
   </head>
   <body class="bg-slate-grey flex flex-col justify-center min-h-screen">
-    <div class="bg-sign_up_mb h-20"></div>
-    <div
-      class="bg-white relative rounded-2xl px-6 pb-8 pt-10 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
-    >
-      <div>
+    <div class="bg-white relative h-screen">
+      <div
+        class="bg-sign_up_mb h-64 w-screen rounded-b-2xl bg-cover bg-no-repeat mb-6"
+      ></div>
+      <div class="px-6">
         <h1 class="text-4xl font-bold text-dark-navy drop-shadow-3xl pb-6">
           Stay updated!
         </h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updatesare a success</li>
-          <li>And much more!</li>
+        <p class="text-dark-navy mb-4">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="text-dark-navy mb-8">
+          <li class="flex mb-4">
+            <img src="/assets/images/icon-list.svg" class="mr-4" /><span
+              >Product discovery and building what matters</span
+            >
+          </li>
+          <li class="flex mb-4">
+            <img src="/assets/images/icon-list.svg" class="mr-4" />Measuring to
+            ensure updatesare a success
+          </li>
+          <li class="flex mb-4">
+            <img src="/assets/images/icon-list.svg" class="mr-4" />And much
+            more!
+          </li>
         </ul>
-        <label class="bg-blue-40">Email address</label>
-        <input type="email" placeholder="email@company.com" />
-
-        <button font-bold>Subscribe to monthly newsletter</button>
+        <div class="flex flex-col">
+          <label class="text-dark-navy text-xs font-bold mb-6"
+            >Email address</label
+          >
+          <input
+            class="py-2 px-3"
+            type="email"
+            placeholder="email@company.com"
+          />
+        </div>
+        <button class="text-dark-navy">Subscribe to monthly newsletter</button>
       </div>
     </div>
 
