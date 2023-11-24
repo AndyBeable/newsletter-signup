@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/AndyBeable/newsletter-signup/issues"
   },
-  "homepage": "https://github.com/AndyBeable/newsletter-signup#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.3.5"
-  }
+  "homepage": "https://github.com/AndyBeable/newsletter-signup#readme"
 }
