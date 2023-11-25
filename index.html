@@ -15,41 +15,42 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="">
-    <div class="">
-      <div class=""></div>
-      <div class="">
-        <h1 class="">Stay updated!</h1>
-        <p class="">
+  <body>
+    <div class="newsletter">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" class="newsletter__image--mobile"></img>
+      <img src="/assets/images/illustration-sign-up-desktop.svg" class="newsletter__image--desktop"></img>
+      <div class="newsletter__details">
+        <h1 class="newsletter__details--title">Stay updated!</h1>
+        <p class="newsletter__details--intro">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
-        <ul class="">
-          <li class="">
-            <img src="/assets/images/icon-list.svg" /><span
+        <ul class="newsletter__details--pros">
+          <li class="newsletter__details--pro">
+            <img class="newsletter__details--pro-icon" src="/assets/images/icon-list.svg" /><span
               >Product discovery and building what matters</span
             >
           </li>
-          <li class="">
-            <img src="/assets/images/icon-list.svg" />Measuring to ensure
+          <li class="newsletter__details--pro">
+            <img class="newsletter__details--pro-icon" src="/assets/images/icon-list.svg" />Measuring to ensure
             updates are a success
           </li>
-          <li class="">
-            <img src="/assets/images/icon-list.svg" />And much more!
+          <li class="newsletter__details--pro">
+            <img class="newsletter__details--pro-icon" src="/assets/images/icon-list.svg" />And much more!
           </li>
         </ul>
-        <div class="">
-          <label class="">Email address</label>
-          <input class="" type="email" placeholder="email@company.com" />
+        <div class="newsletter__details--contact">
+          <label class="newsletter__details--email">Email address</label>
+          <input class="newsletter__details--input" type="email" placeholder="email@company.com" />
         </div>
-        <button class="">Subscribe to monthly newsletter</button>
+        <button class="newsletter__details--button">Subscribe to monthly newsletter</button>
       </div>
     </div>
 
