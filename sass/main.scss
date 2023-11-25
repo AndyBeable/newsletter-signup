@@ -64,6 +64,16 @@ body {
 
     &-icon {
       margin-right: 16px;
+      border-radius: 50%;
+      background-color: $vermellion;
+      background-image: linear-gradient(
+        to bottom,
+        #ff6a3a,
+        #ff614b,
+        #ff5a5c,
+        #ff556b,
+        #ff527b
+      );
     }
   }
 
@@ -102,6 +112,7 @@ body {
     display: inline-block;
     width: 100%;
     font-weight: bold;
+    cursor: pointer;
 
     &:hover,
     :focus {
@@ -150,6 +161,109 @@ body {
 
     &__details {
       padding: 0 64px;
+
+      &__details--pros {
+        width: 380px;
+      }
+    }
+  }
+}
+
+.success {
+  background-color: $base-white;
+  height: 100vh;
+  padding: 10rem 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__icon {
+    height: 100px;
+    align-self: baseline;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 42px;
+    color: $pale-navy;
+    margin-bottom: 24px;
+  }
+
+  &__copy {
+    color: $pale-navy;
+    line-height: 24px;
+    margin-bottom: 10rem;
+
+    & .temp {
+      color: red;
+    }
+  }
+
+  &__button {
+    color: $base-white;
+    background-color: $dark-navy;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 24px;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    align-self: flex-end;
+    cursor: pointer;
+
+    &:hover,
+    :focus {
+      background-color: $vermellion;
+      background-image: linear-gradient(
+        to bottom,
+        #ff6a3a,
+        #ff614b,
+        #ff5a5c,
+        #ff556b,
+        #ff527b
+      );
+      box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.61);
+      transition: 0.5s all ease;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+  }
+
+  .success {
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+
+    &__icon {
+      height: 50px;
+      align-self: baseline;
+      margin-bottom: 0;
+      position: absolute;
+      top: 48px;
+    }
+
+    &__title {
+      padding-top: 5rem;
+    }
+
+    &__copy {
+      margin-bottom: 40px;
     }
   }
 }

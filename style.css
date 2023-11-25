@@ -36,7 +36,10 @@ body {
     align-items: center;
     margin-bottom: 11px; }
     .newsletter__details--pro-icon {
-      margin-right: 16px; }
+      margin-right: 16px;
+      border-radius: 50%;
+      background-color: #ff6155;
+      background-image: linear-gradient(to bottom, #ff6a3a, #ff614b, #ff5a5c, #ff556b, #ff527b); }
   .newsletter__details--contact {
     display: flex;
     flex-direction: column; }
@@ -63,7 +66,8 @@ body {
     margin-bottom: 24px;
     display: inline-block;
     width: 100%;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
     .newsletter__details--button:hover,
     .newsletter__details--button :focus {
       background-color: #ff6155;
@@ -92,4 +96,73 @@ body {
       display: block;
       padding: 24px 24px; }
     .newsletter__details {
-      padding: 0 64px; } }
+      padding: 0 64px; }
+      .newsletter__details__details--pros {
+        width: 380px; } }
+
+.success {
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 10rem 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .success__icon {
+    height: 100px;
+    align-self: baseline;
+    margin-bottom: 4rem; }
+  .success__title {
+    font-size: 42px;
+    color: #36384d;
+    margin-bottom: 24px; }
+  .success__copy {
+    color: #36384d;
+    line-height: 24px;
+    margin-bottom: 10rem; }
+    .success__copy .temp {
+      color: red; }
+  .success__button {
+    color: #ffffff;
+    background-color: #242742;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 24px;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    align-self: flex-end;
+    cursor: pointer; }
+    .success__button:hover,
+    .success__button :focus {
+      background-color: #ff6155;
+      background-image: linear-gradient(to bottom, #ff6a3a, #ff614b, #ff5a5c, #ff556b, #ff527b);
+      box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.61);
+      transition: 0.5s all ease; }
+    .success__button:active {
+      transform: scale(0.98); }
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem; }
+  .success {
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    position: relative; }
+    .success__icon {
+      height: 50px;
+      align-self: baseline;
+      margin-bottom: 0;
+      position: absolute;
+      top: 48px; }
+    .success__title {
+      padding-top: 5rem; }
+    .success__copy {
+      margin-bottom: 40px; } }
