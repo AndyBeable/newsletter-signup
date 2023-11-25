@@ -166,3 +166,6 @@ body {
       padding-top: 5rem; }
     .success__copy {
       margin-bottom: 40px; } }
+
+.hidden {
+  display: none; }
