@@ -51,7 +51,8 @@ body {
     padding: 20px 25px;
     border: 1px solid #9294a0;
     border-radius: 8px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    color: #36384d; }
     .newsletter__details--input::placeholder {
       color: #9294a0;
       font-size: 16px;
@@ -119,8 +120,9 @@ body {
     color: #36384d;
     line-height: 24px;
     margin-bottom: 10rem; }
-    .success__copy .temp {
-      color: red; }
+    .success__copy .email {
+      color: #242742;
+      font-weight: 700; }
   .success__button {
     color: #ffffff;
     background-color: #242742;
@@ -169,3 +171,14 @@ body {
 
 .hidden {
   display: none; }
+
+.form__labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .form__labels .error__message {
+    color: #ff6155; }
+
+.input-error {
+  background-color: #ff605584;
+  border: 1px solid #ff605584; }

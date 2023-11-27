@@ -3,6 +3,7 @@ $pale-navy: #36384d;
 $base-white: #ffffff;
 $light-grey: #9294a0;
 $vermellion: #ff6155;
+$vermellion-transparent: #ff605584;
 
 * {
   box-sizing: border-box;
@@ -93,6 +94,7 @@ body {
     border: 1px solid $light-grey;
     border-radius: 8px;
     margin-bottom: 24px;
+    color: $pale-navy;
 
     &::placeholder {
       color: $light-grey;
@@ -194,8 +196,9 @@ body {
     line-height: 24px;
     margin-bottom: 10rem;
 
-    & .temp {
-      color: red;
+    & .email {
+      color: $dark-navy;
+      font-weight: 700;
     }
   }
 
@@ -270,4 +273,19 @@ body {
 
 .hidden {
   display: none;
+}
+
+.form__labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .error__message {
+    color: $vermellion;
+  }
+}
+
+.input-error {
+  background-color: $vermellion-transparent;
+  border: 1px solid $vermellion-transparent;
 }
