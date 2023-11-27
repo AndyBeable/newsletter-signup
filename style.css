@@ -52,7 +52,8 @@ body {
     border: 1px solid #9294a0;
     border-radius: 8px;
     margin-bottom: 24px;
-    color: #36384d; }
+    color: #36384d;
+    font-size: 16px; }
     .newsletter__details--input::placeholder {
       color: #9294a0;
       font-size: 16px;
@@ -177,8 +178,10 @@ body {
   flex-direction: row;
   justify-content: space-between; }
   .form__labels .error__message {
-    color: #ff6155; }
+    color: #ff6155;
+    font-weight: 700; }
 
 .input-error {
-  background-color: #ff605584;
-  border: 1px solid #ff605584; }
+  background-color: #f6c1bd72;
+  border: 1px solid #ff6155;
+  color: #ff6155; }

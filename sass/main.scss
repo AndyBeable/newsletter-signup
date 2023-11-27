@@ -3,7 +3,7 @@ $pale-navy: #36384d;
 $base-white: #ffffff;
 $light-grey: #9294a0;
 $vermellion: #ff6155;
-$vermellion-transparent: #ff605584;
+$vermellion-transparent: #f6c1bd72;
 
 * {
   box-sizing: border-box;
@@ -95,6 +95,7 @@ body {
     border-radius: 8px;
     margin-bottom: 24px;
     color: $pale-navy;
+    font-size: 16px;
 
     &::placeholder {
       color: $light-grey;
@@ -282,10 +283,12 @@ body {
 
   .error__message {
     color: $vermellion;
+    font-weight: 700;
   }
 }
 
 .input-error {
   background-color: $vermellion-transparent;
-  border: 1px solid $vermellion-transparent;
+  border: 1px solid $vermellion;
+  color: $vermellion;
 }
